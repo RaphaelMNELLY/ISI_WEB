@@ -1,5 +1,75 @@
 /* mon premier fichier css */
 p
 {color: blue; /* les paragraphes seront en bleu */}
-h1
-{color: green;/* les titres h1 seront en vert */}
+h1, h2 /* meme propriete */
+{color: #C31013; text-align: justify; /*right center, left*/
+}
+h3{color : rgb(122,5,67); border: 3px solid green; border-radius: 20px;/* pour du pourpre */}
+img{border-radius: 20px;
+border: 3px solid pink;/* none pour les supprimer*/
+    box-shadow: 6px 6px 0px pink; /*ombre*/}
+
+.important /* class*/
+{
+color: red; font-size: 20px; font-style: italic; /* oblique, normal */
+font-weight: bold; text-decoration: underline; /*line-through, overline,none*/
+text-shadow: 2px 2px 4px red;}
+#en_gros{ /*id*/
+    font-family: "Arial Black", Arial, Verdana, serif;
+    font-size : 5.2em; /*valeur en pourcentage de la taille de base*/
+}
+/*pour toutes les balises
+*{ } */
+
+/* pour em se trouvant dans un h3
+h3 em{ }*/
+
+
+/* style pour la première balise <p> située après un titre <h3> 
+h3 + p {}*/
+
+/* style pour les liens <a> qui possèdent un attribut title 
+a[title] {}*/ /* possibilité de mettre une valeur exacte : totre="val"" */
+.imageflottante{
+    float: left;
+}
+.dessous {
+clear: both;
+}
+body
+{
+background-color: black;/* Fond noir */
+color: white;/* Texte de la page en blanc */
+background-image: url("images/fond.jpg"); /* adressage relatif */ background-attachment: fixed; /* Le fond restera fixe, scroll sinon */
+}
+/* pour les tableaux */
+td, th /* pour toutes les cellules des tableaux td et th */
+{
+border: 1px solid black; /* bordure noire, pleine, de 1px */
+text-align: center; /* le texte est centré dans les cellules */
+padding: 5px; /* marge intérieure de 5px */}
+table
+{
+border-collapse: collapse;/* ou separate*/ 
+/* les bordures du tableau collées */
+width: 30%;/* il occupe 30% de la largeur de page */
+margin: auto;/* il est centré sur la page */}
+
+/*apparence dynamique*/
+a /* Liens par défaut (non survolés) */
+{ text-decoration: none; /* pas de soulignement */ 
+  color: blue; /* couleur bleue */ 
+  font-style: italic; /* en italique */
+} 
+a:hover /* Lorsqu'on survole les liens */
+{
+color: green; /* couleur verte */
+}
+a:active /* Lorsqu'on clique sur le lien */
+{
+background-color: yellow; }
+a:focus /* Lorsqu'on sélectionne le lien */
+{
+background-color: red; }
+a:visited /* Quand l'internaute a déjà consulté la page concernée */
+{ color: grey; /* couleur grise */ }
